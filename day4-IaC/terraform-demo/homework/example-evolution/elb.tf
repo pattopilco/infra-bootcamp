@@ -2,7 +2,7 @@ resource "aws_elb" "my-elb" {
   name            = "my-elb"
   subnets         = [aws_subnet.main-public-1.id, aws_subnet.main-public-2.id]
   ##########Level Charizard : EMPC_CHECK : Replace the security groups here with the right value##########
-  security_groups = [<What should be coming here?>]
+  security_groups = [aws_security_group.elb-securitygroup.id]
   listener {
     instance_port     = 80
     instance_protocol = "http"

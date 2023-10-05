@@ -3,11 +3,11 @@ variable "aws_region" {
 }
 
 variable "path_to_private_key" {
-  default = "mykey"
+  default = "/home/pattopilco/bootcamp"
 }
 
 variable "path_to_public_key" {
-  default = "mykey.pub"
+  default = "/home/pattopilco/bootcamp.pub"
 }
 
 variable "amis" {
